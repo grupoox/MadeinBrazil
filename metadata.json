@@ -1,0 +1,6 @@
+{
+  "name": "Made In Brazil — Squeeze Page",
+  "description": "Squeeze page de alta conversão inspirada no The News para a newsletter Made In Brazil (madeinbrazil.tv), com design vibrante e cores chamativas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

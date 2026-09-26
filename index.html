@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made In Brazil — O seu café da manhã com as notícias mais importantes</title>
+    <meta
+      name="description"
+      content="Assine a Made In Brazil: o que você precisa saber para começar o dia bem informado em 5 minutos. Curadoria independente, sem enrolação e 100% gratuita."
+    />
+    <meta property="og:title" content="Made In Brazil — O seu café da manhã com as notícias mais importantes" />
+    <meta
+      property="og:description"
+      content="Assine a Made In Brazil: o que você precisa saber para começar o dia bem informado em 5 minutos. Curadoria independente, sem enrolação e 100% gratuita."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Made In Brazil" />
+    <meta property="og:url" content="https://madeinbrazil.tv/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Made In Brazil — O seu café da manhã com as notícias mais importantes" />
+    <meta
+      name="twitter:description"
+      content="O que você precisa saber para começar o dia bem informado em 5 minutos. Toda semana às 06:06 no seu e-mail."
+    />
+
+    <!-- Google Fonts: Plus Jakarta Sans (Modern Clean) & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Pure CSS Stylesheet -->
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Periodical",
+      "name": "Made In Brazil",
+      "description": "Newsletter matinal com curadoria das notícias mais importantes do Brasil e do mundo explicadas em 5 minutos.",
+      "url": "https://madeinbrazil.tv/",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Made In Brazil",
+        "url": "https://madeinbrazil.tv/"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Top Navigation Bar (The News inspired) -->
+    <header class="top-header">
+      <div class="container nav-container">
+        <!-- Zone 1: Playful Made In Brazil Brand Badge -->
+        <a href="#top" class="brand-wrapper" aria-label="Made In Brazil Início">
+          <span class="brand-badge">🇧🇷 made in</span>
+          <span class="brand-name">brazil</span>
+          <span class="brand-domain-tag">.tv</span>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav class="nav-links" aria-label="Navegação Principal">
+          <a href="#proposta" class="nav-link">O Formato</a>
+          <a href="#amostra" class="nav-link">Amostra da Edição</a>
+          <a href="#depoimentos" class="nav-link">Quem Lê</a>
+          <a href="#duvidas" class="nav-link">Dúvidas</a>
+        </nav>
+
+        <!-- Zone 3: CTA & Admin Panel -->
+        <div class="nav-actions">
+          <button
+            type="button"
+            id="open-admin-btn"
+            class="btn btn-ghost btn-sm"
+            title="Ver inscritos salvos no navegador (Demo)"
+          >
+            <span>👥</span>
+            <span class="font-mono tabular-nums">(<span id="nav-subscriber-count">3</span>)</span>
+          </button>
+
+          <a href="#hero-squeeze-box" class="btn btn-vibrant-yellow btn-sm">
+            <span>Assinar Grátis ⚡</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Hero Squeeze Section -->
+    <main>
+      <section id="top" class="hero-section">
+        <div class="container">
+          <!-- The News Style Sticker Badges -->
+          <div class="hero-kicker-wrapper">
+            <span class="sticker-badge sticker-badge-yellow">
+              <span>☕</span>
+              <span>O seu café da manhã inteligente</span>
+            </span>
+            <span class="sticker-badge sticker-badge-white">
+              <span>⚡</span>
+              <span>É grátis e sempre vai ser</span>
+            </span>
+            <span class="sticker-badge sticker-badge-white">
+              <span>🇧🇷</span>
+              <span>Feito no Brasil</span>
+            </span>
+            <span class="sticker-badge sticker-badge-white">
+              <span>⏱️</span>
+              <span>Leitura de 5 minutos</span>
+            </span>
+          </div>
+
+          <!-- Main Punchy Headline -->
+          <h1 class="hero-title">
+            O que você precisa saber para começar o dia <span class="highlight-yellow">bem informado.</span>
+          </h1>
+
+          <!-- Value Proposition Subtitle -->
+          <p class="hero-subtitle">
+            Sem enrolação, sem sensacionalismo e sem juridiquês. As notícias mais importantes de economia, tecnologia e negócios no seu e-mail toda semana às 06:06.
+          </p>
+
+          <!-- The Eye-Catching Conversion Box (Max Squeeze Focus) -->
+          <div class="squeeze-wrapper">
+            <!-- Form State -->
+            <div id="hero-squeeze-box" class="squeeze-box">
+              <form id="hero-subscribe-form" class="squeeze-form" autocomplete="on">
+                <div class="input-container">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                  <input
+                    type="email"
+                    id="hero-email-input"
+                    class="email-input"
+                    placeholder="Coloque seu melhor e-mail aqui..."
+                    required
+                    aria-label="Digite seu e-mail para assinar"
+                  />
+                </div>
+                <!-- High-Impact Eye-Catching Yellow Button -->
+                <button type="submit" class="cta-button-main">
+                  <span>QUERO RECEBER GRÁTIS ⚡</span>
+                </button>
+              </form>
+
+              <!-- Topic Personalization Chips -->
+              <div class="topics-row">
+                <span class="topics-label">Escolha seus interesses:</span>
+                <button type="button" class="topic-chip active" data-topic="Tecnologia & IA">Tecnologia & IA ⚡</button>
+                <button type="button" class="topic-chip active" data-topic="Economia & Negócios">Economia & Negócios 📈</button>
+                <button type="button" class="topic-chip" data-topic="Brasil & Mundo">Brasil & Mundo 🇧🇷</button>
+                <button type="button" class="topic-chip" data-topic="Cultura & Dicas">Cultura & Dicas 🥐</button>
+              </div>
+            </div>
+
+            <!-- Success Celebration State Card -->
+            <div id="hero-success-card" class="success-card">
+              <div class="success-header">
+                <div class="success-badge">☕</div>
+                <div>
+                  <h2 class="success-title">Pronto! Você é dos nossos. 🎉</h2>
+                  <p class="success-desc">
+                    Cadastramos <strong id="hero-success-email">seu e-mail</strong> na lista oficial da Made In Brazil. Toda semana às 06:06 em ponto o café estará na sua caixa de entrada.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Instant Action Options -->
+              <div class="success-actions">
+                <button type="button" id="read-sample-btn" class="btn btn-vibrant-yellow btn-sm">
+                  <span>Espiar Amostra Agora 🥐</span>
+                </button>
+                <button type="button" id="gcal-reminder-btn" class="btn btn-secondary btn-sm">
+                  <span>📅 Lembrete na Agenda</span>
+                </button>
+                <button type="button" id="whatsapp-share-btn" class="btn btn-secondary btn-sm">
+                  <span>💬 Mandar no WhatsApp</span>
+                </button>
+              </div>
+
+              <div class="success-footer">
+                <span>Dica de amigo: adicione a gente aos favoritos para não cair no Spam.</span>
+                <button type="button" id="hero-reset-btn" class="reset-form-link">Cadastrar outro e-mail</button>
+              </div>
+            </div>
+
+            <!-- Trust Signals Row -->
+            <div class="trust-row">
+              <span class="trust-item">
+                <span>💛</span>
+                <span class="trust-highlight">100% grátis</span>
+                <span>(e sempre será)</span>
+              </span>
+              <span class="trust-item">
+                <span>☕</span>
+                <span>5 minutos de leitura</span>
+              </span>
+              <span class="trust-item">
+                <span>🔒</span>
+                <span>Zero spam · Cancele em 1 clique</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Social Proof Banner (The News Style) -->
+          <div class="hero-proof-bar">
+            <div class="readers-stack">
+              <div class="avatar-group" aria-hidden="true">
+                <div class="avatar-circle">☕</div>
+                <div class="avatar-circle">CM</div>
+                <div class="avatar-circle">RA</div>
+                <div class="avatar-circle">BL</div>
+              </div>
+              <div class="readers-text">
+                <strong>+24.000 profissionais e mentes curiosas</strong>
+                <span>já começam o dia com a Made In Brazil</span>
+              </div>
+            </div>
+
+            <div class="proof-metric">
+              <div class="proof-metric-number tabular-nums">48,6%</div>
+              <div class="proof-metric-label">taxa média de abertura de e-mail</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Why Read Made In Brazil (The News Pillars) -->
+      <section id="proposta" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">O jeito Made In Brazil de informar</span>
+            <h2 class="section-title">Informação sem afobação, direto no que importa.</h2>
+            <p class="section-desc">
+              Os portais de notícias tradicionais lucram com o seu desespero e cliques em manchetes sensacionalistas. A gente faz o oposto.
+            </p>
+          </div>
+
+          <div class="pillars-grid">
+            <!-- Pillar 1 -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">☕</div>
+              <h3 class="pillar-title">Tom de conversa entre amigos</h3>
+              <p class="pillar-text">
+                Esqueça os jargões chatos do economês ou o tom professoral dos telejornais. A gente explica os fatos como se estivéssemos tomando um café na mesma mesa.
+              </p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">⚡</div>
+              <h3 class="pillar-title">Curadoria cirúrgica em 5 min</h3>
+              <p class="pillar-text">
+                Lemos centenas de portais do Brasil e do mundo para você não precisar fazer isso. Selecionamos apenas as notícias que realmente influenciam sua vida e negócios.
+              </p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">🥐</div>
+              <h3 class="pillar-title">Cultura, dicas e respiro</h3>
+              <p class="pillar-text">
+                Porque a vida não é só juros e inteligência artificial. Cada edição traz uma recomendação cultural, um insight sagaz ou uma ferramenta prática para sua rotina.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Interactive Sample Edition (The News Format) -->
+      <section id="amostra" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">Transparência Total</span>
+            <h2 class="section-title">Dá uma espiada no que chega no seu e-mail.</h2>
+            <p class="section-desc">
+              Este é o formato exato que nossos leitores recebem toda semana. Limpo, leve e sem poluição visual.
+            </p>
+          </div>
+
+          <div class="preview-wrapper">
+            <!-- Newsletter Mock Topbar -->
+            <div class="preview-topbar">
+              <div class="preview-meta">
+                <span class="preview-meta-badge">MADE IN BRAZIL</span>
+                <span>EDIÇÃO #52</span>
+                <span>·</span>
+                <span>SEXTA-FEIRA, 06:06</span>
+              </div>
+              <!-- Speech synthesis preview -->
+              <button type="button" id="audio-play-btn" class="preview-audio-btn">
+                <span>☕</span>
+                <span id="audio-play-text">Ouvir Resumo em Áudio (2 min)</span>
+              </button>
+            </div>
+
+            <!-- Mock Body -->
+            <div class="preview-content">
+              <div class="preview-the-news-header">
+                <div class="the-news-date">SEXTA-FEIRA, 26 DE SETEMBRO DE 2026</div>
+                <h3 class="the-news-salutation">BOM DIA! ☕</h3>
+                <p class="the-news-intro-paragraph">
+                  Se você acordou querendo entender o Brasil e o mundo sem ter uma crise de ansiedade matinal, veio ao lugar certo. Pegue seu café que a leitura leva exatos 4 minutos e meio.
+                </p>
+              </div>
+
+              <!-- Main Story (The News style) -->
+              <article class="the-news-story-box">
+                <span class="story-pill-category">O ASSUNTO DO DIA ⚡</span>
+                <h4 class="story-title">O verdadeiro gargalo da IA não é chip: é a tomada da parede.</h4>
+                <p class="story-text">
+                  Enquanto todo mundo prestava atenção nas placas de vídeo de última geração, as maiores empresas do Vale do Silício perceberam um detalhe sutil: não tem eletricidade suficiente para ligar tudo ao mesmo tempo.
+                </p>
+                <ul class="story-bullets">
+                  <li class="story-bullet-item">
+                    Data centers dedicados a modelos de inteligência artificial consomem até 10 vezes mais energia ininterrupta do que servidores comuns.
+                  </li>
+                  <li class="story-bullet-item">
+                    Big techs começaram a comprar e reativar usinas nucleares inteiras e fechar contratos exclusivos com parques solares e hidrelétricos.
+                  </li>
+                  <li class="story-bullet-item">
+                    Regiões com excedente de geração de energia limpa (como o Brasil) viram as novas estrelas da revolução da infraestrutura tech.
+                  </li>
+                </ul>
+                <div class="the-news-takeaway">
+                  <strong>Por que isso importa:</strong> A nova corrida do ouro digital não é só software — quem souber produzir, transportar e refrigerar energia limpa é quem manda no jogo agora.
+                </div>
+              </article>
+
+              <!-- In A Few Words (The News style) -->
+              <h5 style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-subtle); margin-bottom: 12px;">
+                EM POUCAS PALAVRAS 📌
+              </h5>
+              <div class="briefs-grid">
+                <div class="brief-card">
+                  <span class="brief-label">MERCADOS 📊</span>
+                  <p class="brief-text">Bancos centrais calibram taxas com cautela e o consumo das famílias dá sinais de estabilização.</p>
+                </div>
+                <div class="brief-card">
+                  <span class="brief-label">CARROS 🚗</span>
+                  <p class="brief-text">Modelos híbridos flex disparam nas vendas no Brasil e superam a meta das grandes montadoras.</p>
+                </div>
+                <div class="brief-card">
+                  <span class="brief-label">CARREIRA 💼</span>
+                  <p class="brief-text">Profissionais que sabem combinar criatividade humana com automação dominam novas vagas tech.</p>
+                </div>
+              </div>
+
+              <!-- Coffee Break / Culture Box -->
+              <div class="coffee-break-box">
+                <div class="coffee-break-title">
+                  <span>🥐</span>
+                  <span>PARA O SEU CAFÉ (DICA DA SEMANA)</span>
+                </div>
+                <p class="coffee-break-text">
+                  Uma ferramenta de código aberto que condensa transcripts de reuniões longas em 3 decisões práticas sem mandar nenhum dado para servidores de terceiros. Vale salvar nos favoritos.
+                </p>
+              </div>
+
+              <!-- Inline Fast Subscribe Box inside Preview -->
+              <div class="preview-cta-block">
+                <h4 class="preview-cta-title">Curtiu o formato? ☕</h4>
+                <p class="preview-cta-text">Toda semana tem uma edição fresca esperando por você logo cedo. É só colocar seu e-mail:</p>
+                <form id="preview-subscribe-form" class="preview-inline-form">
+                  <input
+                    type="email"
+                    id="preview-email-input"
+                    class="preview-inline-input"
+                    placeholder="Seu melhor e-mail..."
+                    required
+                  />
+                  <button type="submit" class="btn btn-vibrant-yellow btn-sm">
+                    Garantir Minha Vaga ⚡
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Testimonials (Quem lê a Made In Brazil) -->
+      <section id="depoimentos" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">Comunidade Made In Brazil</span>
+            <h2 class="section-title">O que dizem os mais de 24.000 assinantes.</h2>
+            <p class="section-desc">
+              Gente de startups, grandes empresas, estudantes e autônomos que trocaram o feed ansioso das redes sociais por 5 minutos de leitura inteligente.
+            </p>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "A Made In Brazil é a primeira coisa que abro na manhã de sexta. Levo 5 minutos, me divirto com o tom leve e chego nas reuniões com tudo na ponta da língua."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">CM</div>
+                <div class="author-info">
+                  <strong>Carolina Mendes</strong>
+                  <span>Head de Estratégia, Fintech Hub</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "O formato da Made In Brazil no estilo The News é simplesmente perfeito. Nada daquela linguagem arrogante ou manchetes caça-cliques. É informação pura e gostosa de ler."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background:#FFE600;">RA</div>
+                <div class="author-info">
+                  <strong>Rafael Albuquerque</strong>
+                  <span>Co-fundador & CTO, Nexus Tech</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "Minha produtividade agradeceu demais. Parei de perder meia hora pulando de portal em portal. A Made In Brazil sintetiza exatamente o que tem relevância de verdade."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background:#121316; color:white;">BL</div>
+                <div class="author-info">
+                  <strong>Beatriz Lins</strong>
+                  <span>Economista & Analista de Mercado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: FAQ Accordion -->
+      <section id="duvidas" class="section">
+        <div class="container-narrow">
+          <div class="section-header">
+            <span class="section-kicker">Perguntas Frequentes</span>
+            <h2 class="section-title">Ficou com alguma dúvida?</h2>
+            <p class="section-desc">Aqui está tudo o que você precisa saber antes de se juntar ao café da manhã da Made In Brazil.</p>
+          </div>
+
+          <div class="faq-list">
+            <!-- FAQ 1 -->
+            <div class="faq-item active">
+              <button type="button" class="faq-trigger">
+                <span>É mesmo 100% gratuita? Sem pegadinhas?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                Sim! A Made In Brazil é e sempre será 100% gratuita para os leitores. Não existe período de testes, cartão de crédito nem cobrança surpresa no futuro.
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <button type="button" class="faq-trigger">
+                <span>Qual o dia e horário que a edição chega?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                Toda sexta-feira, pontualmente às 06:06 da manhã. Assim que você acordar ou sentar para tomar seu café, a edição já estará te esperando.
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <button type="button" class="faq-trigger">
+                <span>Vocês vão lotar meu e-mail de propaganda chata?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                Nem pensar. Também odiamos spam. Enviamos apenas 1 e-mail por semana (a curadoria semanal). Seus dados não são vendidos para ninguém.
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+              <button type="button" class="faq-trigger">
+                <span>E se eu não gostar? Posso sair fácil?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                A qualquer momento! Em todas as edições há um botão visível no rodapé para cancelar em 1 clique, sem formulários e sem constrangimento.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Final High-Impact Yellow CTA Banner -->
+      <section class="final-cta-section">
+        <div class="container-narrow">
+          <h2 class="final-cta-title">Comece suas manhãs mais inteligente e bem-humorado.</h2>
+          <p class="final-cta-desc">
+            Mais de 24.000 pessoas já recebem o melhor resumo da semana. Leva 5 segundos para se inscrever.
+          </p>
+
+          <div class="final-btn-wrapper">
+            <a href="#hero-squeeze-box" class="btn btn-dark btn-lg" style="width: 100%;">
+              <span>Subir e Garantir Edição Grátis ⚡</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Sticky Bottom Bar with Vibrant Yellow Button -->
+    <aside id="sticky-subscribe-bar" class="sticky-subscribe-bar" aria-label="Inscrição rápida">
+      <div class="sticky-content">
+        <div class="sticky-text">
+          <span style="font-size: 16px;">☕</span>
+          <span><strong>Made In Brazil</strong> · Toda semana às 06:06 no seu e-mail</span>
+        </div>
+        <form id="sticky-subscribe-form" class="sticky-form">
+          <input
+            type="email"
+            id="sticky-email-input"
+            class="sticky-input"
+            placeholder="Digite seu e-mail..."
+            required
+            aria-label="E-mail para assinatura rápida"
+          />
+          <button type="submit" class="sticky-btn">
+            Assinar Grátis ⚡
+          </button>
+        </form>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <span style="font-weight: 800; font-size: 16px; color: var(--text-main);">made in brazil</span>
+          <span style="margin: 0 8px;">·</span>
+          <span>O que você precisa saber para começar o dia bem informado.</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://madeinbrazil.tv/" target="_blank" rel="noopener noreferrer" class="footer-link">madeinbrazil.tv</a>
+          <a href="#duvidas" class="footer-link">Privacidade</a>
+          <a href="#top" class="footer-link">Voltar ao topo ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Admin / Subscriber Management Modal (For the owner) -->
+    <div id="admin-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-card">
+        <div class="modal-header">
+          <div>
+            <h3 id="modal-title" class="modal-title">Painel de Inscritos (Local) ☕</h3>
+            <p style="font-size: 12px; color: #333; margin-top: 2px;">
+              Gerenciamento dos leads salvos no navegador nesta sessão (madeinbrazil.tv).
+            </p>
+          </div>
+          <button type="button" id="close-admin-btn" class="modal-close-btn" aria-label="Fechar painel">✕</button>
+        </div>
+
+        <div class="modal-body">
+          <table class="subscribers-table">
+            <thead>
+              <tr>
+                <th>E-mail</th>
+                <th>Interesses</th>
+                <th>Data</th>
+                <th>Origem</th>
+              </tr>
+            </thead>
+            <tbody id="subscribers-tbody">
+              <!-- Dynamically populated via main.js -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="modal-footer">
+          <div style="font-size: 13px; font-weight: 600; color: var(--text-muted);">
+            Total: <strong id="modal-subscriber-count" style="color: var(--text-main);">0</strong> inscritos
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button type="button" id="clear-subs-btn" class="btn btn-ghost btn-sm" style="color: #dc2626;">
+              Limpar Lista
+            </button>
+            <button type="button" id="export-csv-btn" class="btn btn-vibrant-yellow btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Exportar CSV</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pure Vanilla JavaScript -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
